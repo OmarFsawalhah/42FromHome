@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,12 +10,19 @@
 /*   Updated: 2026/09/29 19:24:48 by osawalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+>>>>>>> origin/main
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
+<<<<<<< HEAD
 	size_t			i;
 	unsigned char	*s1;
+=======
+	int	i;
+	unsigned	char *s1;
+>>>>>>> origin/main
 
 	i = 0;
 	s1 = (unsigned char *) s;
@@ -28,3 +36,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main

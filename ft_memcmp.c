@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,13 +10,21 @@
 /*   Updated: 2026/09/29 19:26:22 by osawalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+>>>>>>> origin/main
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+<<<<<<< HEAD
 	const unsigned char	*b1;
 	const unsigned char	*b2;
 	size_t				i;
+=======
+	const unsigned char *b1;
+	const unsigned char *b2;
+	int	i;
+>>>>>>> origin/main
 
 	b1 = s1;
 	b2 = s2;

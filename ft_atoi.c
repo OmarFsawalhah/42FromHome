@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,8 @@
 /*   Updated: 2026/09/29 20:24:58 by osawalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+>>>>>>> origin/main
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -17,6 +20,7 @@ int	ft_atoi(const char *str)
 	int	sign;
 	int	result;
 
+<<<<<<< HEAD
 	i = 0;
 	sign = 1;
 	result = 0;
@@ -29,9 +33,31 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (ft_isdigit(str[i]))
+=======
+	result = 0;
+	sign = 1;
+	i = 0;
+	while(str[i] == ' ')
+	{
+		i++;
+	}
+	if(str[i] == '-')
+	{
+		sign = -1;
+		i++;
+	}
+	else if(str[i] == '+')
+		i++;
+	while(ft_isdigit(str[i]))
+>>>>>>> origin/main
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
+<<<<<<< HEAD
 	return (result * sign);
+=======
+	return(result * sign);
+
+>>>>>>> origin/main
 }

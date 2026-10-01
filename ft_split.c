@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -10,6 +11,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+=======
+>>>>>>> origin/main
 #include "libft.h"
 
 static size_t	count_words(char const *s, char c)
@@ -19,7 +22,11 @@ static size_t	count_words(char const *s, char c)
 
 	i = 0;
 	count = 0;
+<<<<<<< HEAD
 	while (s[i])
+=======
+	while(s[i])
+>>>>>>> origin/main
 	{
 		if (s[i] != c && (i == 0 || s[i - 1] == c))
 		{
@@ -27,7 +34,12 @@ static size_t	count_words(char const *s, char c)
 		}
 		i ++;
 	}
+<<<<<<< HEAD
 	return (count);
+=======
+	return(count);
+
+>>>>>>> origin/main
 }
 
 static size_t	word_len(char const *s, char c)
@@ -39,7 +51,11 @@ static size_t	word_len(char const *s, char c)
 	{
 		i++;
 	}
+<<<<<<< HEAD
 	return (i);
+=======
+	return(i);
+>>>>>>> origin/main
 }
 
 static char	**free_words(char **result, size_t count)
@@ -48,12 +64,23 @@ static char	**free_words(char **result, size_t count)
 	{
 		count --;
 		free(result[count]);
+<<<<<<< HEAD
 	}
 	free (result);
 	return (NULL);
 }
 
 static char	**fill_words(char **result, char const *s, char c, size_t count)
+=======
+
+	}
+	free(result);
+	return (NULL);
+}
+
+static char	**fill_words(char **result, char const *s, char c,
+		size_t count)
+>>>>>>> origin/main
 {
 	size_t	i;
 	size_t	word;

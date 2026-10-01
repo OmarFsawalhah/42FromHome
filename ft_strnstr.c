@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,10 +10,13 @@
 /*   Updated: 2026/09/29 20:23:32 by osawalha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+>>>>>>> origin/main
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
+<<<<<<< HEAD
 	size_t	i;
 	size_t	j;
 
@@ -29,4 +33,23 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		i++;
 	}
 	return (NULL);
+=======
+	int	i;
+	int	j;
+
+	i = 0;
+	while(i < len)
+	{
+		j = 0;
+		while (little[j] != '\0' && big[i + j] == little[j])
+		{
+			j++;
+		}
+		if (little[j] == '\0')
+			return ((char *) &big[i]);
+		i++;
+	}
+	return(NULL);
+
+>>>>>>> origin/main
 }
